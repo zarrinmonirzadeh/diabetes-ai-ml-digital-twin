@@ -1,170 +1,171 @@
 # Diabetes AI/ML Digital Twin Framework
 
-A simulation-driven digital twin framework for diabetes that integrates machine learning, temporal modeling, and counterfactual analysis to support decision-oriented care.
+A simulation-driven digital twin framework for diabetes that integrates machine learning, temporal modeling, and causal inference to support decision-oriented care.
 
 ---
 
-## Overview
-This repository provides a reproducible implementation of a digital twin architecture for diabetes modeling. The framework moves beyond prediction by enabling simulation of intervention scenarios such as dietary changes and physical activity, allowing structured comparison of potential outcomes.
+## 🧠 Overview
 
-The approach combines:
-- Predictive modeling (regression and classification)
-- Temporal data representation
-- Counterfactual simulation
-- Decision-support analysis
+This repository presents a **reproducible digital twin architecture** for modeling glucose dynamics in diabetes patients using Continuous Glucose Monitoring (CGM) data.
+
+Unlike traditional predictive models, this framework enables:
+
+- Simulation of interventions (diet, activity)
+- Counterfactual outcome estimation
+- Temporal glucose modeling
+- Decision-support insights
+
+---
+
+## ⚙️ Methodology
+
+The framework combines:
+
+- **Machine Learning**
+  - Regression & predictive modeling
+- **Time-Series Analysis**
+  - CGM trajectory modeling
+- **Causal Inference**
+  - Counterfactual reasoning
+  - Difference-in-Differences (DiD)
+- **Simulation Engine**
+  - Intervention-based trajectory generation
+
+---
 
 ## 📊 Results & Visualizations
 
-### 📌 Fig 01 — Daily CGM Profile (Real Patient)
+### 🔹 CGM Data & Clinical Representation
+
+#### 📌 Fig 01 — Daily CGM Profile (Real Patient)
 ![Fig01](figures/Fig01.png)
+Real glucose fluctuations over 24 hours, including hyperglycemia and hypoglycemia.
 
-Shows real glucose fluctuations over a 24-hour period, including hyperglycemic and hypoglycemic episodes.
-
----
-
-### 📌 Fig 02 — Ambulatory Glucose Profile (AGP)
+#### 📌 Fig 02 — Ambulatory Glucose Profile (AGP)
 ![Fig02](figures/Fig02.png)
+Glucose distribution, variability, and time-in-range metrics.
 
-Summarizes glucose distribution, variability, and time-in-range statistics.
-
----
-
-### 📌 Fig 03 — Same HbA1c, Different Glucose Dynamics
+#### 📌 Fig 03 — Same HbA1c, Different Dynamics
 ![Fig03](figures/Fig03.png)
+Identical HbA1c can mask very different glucose variability patterns.
 
-Illustrates how two patients can have identical HbA1c but very different glucose variability.
-
----
-
-### 📌 Fig 04 — Glucose Threshold Monitoring
+#### 📌 Fig 04 — Glucose Threshold Monitoring
 ![Fig04](figures/Fig04.png)
-
-Highlights safe range boundaries (70–180 mg/dL) and excursions beyond them.
+Safe range (70–180 mg/dL) and excursions beyond clinical limits.
 
 ---
 
-### 📌 Fig 05 — Smoothed CGM Signal with Trend
+### 🔹 Signal Processing & Temporal Modeling
+
+#### 📌 Fig 05 — Smoothed CGM Signal
 ![Fig05](figures/Fig05.png)
+Trend extraction with uncertainty estimation.
 
-Combines raw CGM signal with trend estimation and uncertainty.
-
----
-
-### 📌 Fig 06 — 24-Hour CGM Trajectory
+#### 📌 Fig 06 — 24-Hour CGM Trajectory
 ![Fig06](figures/Fig06.png)
-
-Baseline time-series used for modeling and simulation.
+Baseline time-series used for simulation.
 
 ---
 
-### 📌 Fig 07 — Counterfactual Glucose Simulation
+### 🔹 Counterfactual Simulation
+
+#### 📌 Fig 07 — Intervention Simulation
 ![Fig07](figures/Fig07.png)
+Simulated impact of:
+- Reduced carbohydrate intake
+- Physical activity (walking)
 
-Simulates interventions:
-- Reduced carbohydrates
-- Walking effect
-
----
-
-### 📌 Fig 08 — Real vs Counterfactual Trajectories
+#### 📌 Fig 08 — Real vs Counterfactual
 ![Fig08](figures/Fig08.png)
+Observed CGM vs simulated intervention outcomes.
 
-Compares observed CGM with simulated intervention outcomes.
-
----
-
-### 📌 Fig 09 — Clinical Feature Sensitivity Analysis
+#### 📌 Fig 09 — Clinical Sensitivity Analysis
 ![Fig09](figures/Fig09.png)
-
-Evaluates how physiological variables respond to glucose perturbations.
+Response of physiological variables to glucose perturbations.
 
 ---
 
-### 📌 Fig 10 — Intervention vs Counterfactual Framework
+### 🔹 Causal Inference Framework
+
+#### 📌 Fig 10 — Intervention vs Counterfactual
 ![Fig10](figures/Fig10.png)
+Core causal concept: observed vs counterfactual trajectories.
 
-Core causal concept:
-Observed vs counterfactual trajectories after intervention.
-
----
-
-### 📌 Fig 11 — Difference-in-Differences (DiD)
+#### 📌 Fig 11 — Difference-in-Differences (DiD)
 ![Fig11](figures/Fig11.png)
-
-Estimates intervention effect using causal inference.
+Estimation of treatment effects using causal inference.
 
 ---
 
-### 📌 Fig 12 — Activity Impact on Glucose
-![Fig12](figures/Fig12.png)
+### 🔹 Behavioral & Physiological Effects
 
-Compares:
+#### 📌 Fig 12 — Activity Impact
+![Fig12](figures/Fig12.png)
+Comparison of glucose response under:
 - Sitting
 - Light activity
 - Moderate activity
 
 ---
 
-### 📌 Fig 13 — Model Behavior (Classic vs Improved)
+### 🔹 Model Evaluation & Behavior
+
+#### 📌 Fig 13 — Model Comparison
 ![Fig13](figures/Fig13.png)
+Classic vs improved modeling performance.
 
-Comparison of baseline vs enhanced modeling approach.
-
----
-
-### 📌 Fig 14 — Linear vs Nonlinear Trends
+#### 📌 Fig 14 — Linear vs Nonlinear Trends
 ![Fig14](figures/Fig14.png)
+Demonstrates limitations of linear assumptions.
 
-Demonstrates limitations of linear modeling in physiological systems.
-
----
-
-### 📌 Fig 15 — Glucose Envelope / Range Modeling
+#### 📌 Fig 15 — Glucose Envelope Modeling
 ![Fig15](figures/Fig15.png)
-
 Captures uncertainty and physiological bounds.
 
 ---
 
-### 📌 Fig 16 — Glucose Stability Zones
+### 🔹 Longitudinal & Stability Analysis
+
+#### 📌 Fig 16 — Glucose Stability Zones
 ![Fig16](figures/Fig16.png)
+Defines hypo-, normo-, and hyperglycemic regions.
 
-Defines:
-- Hypoglycemia
-- Normal range
-- Hyperglycemia
-
----
-
-### 📌 Fig 17 — Longitudinal CGM (OhioT1DM)
+#### 📌 Fig 17 — Longitudinal CGM (OhioT1DM)
 ![Fig17](figures/Fig17.png)
-
-Long-term variability across months.
+Multi-month glucose variability patterns.
 
 ---
 
-### 📌 Fig 18 — Regression Fit Example
+### 🔹 Model Fitting & Trends
+
+#### 📌 Fig 18 — Regression Fit
 ![Fig18](figures/Fig18.png)
+Parameter estimation and model fitting example.
 
-Illustrates model fitting and parameter estimation.
-
----
-
-### 📌 Fig 19 — Multi-Series Trend Comparison
+#### 📌 Fig 19 — Multi-Series Trends
 ![Fig19](figures/Fig19.png)
-
-Comparison of multiple modeled trajectories.
+Comparison of multiple simulated trajectories.
 
 ---
 
-## 📊 Key Insight
+## 💡 Key Contributions
 
 This framework enables:
 
-- Predictive modeling of glucose
-- Simulation of interventions (diet, activity)
-- Causal inference (treatment effects)
-- Digital twin representation of patient physiology
+- **Patient-specific digital twin modeling**
+- **Simulation of treatment scenarios**
+- **Causal inference for interventions**
+- **Explainable AI for healthcare decision support**
+
 ---
 
-## Repository Structure
+## 🧪 Use Cases
+
+- Personalized diabetes management
+- Clinical decision support systems
+- Research in causal ML for healthcare
+- Simulation-based treatment planning
+
+---
+
+## 📁 Repository Structure
