@@ -166,6 +166,29 @@ This framework enables:
 - Research in causal ML for healthcare
 - Simulation-based treatment planning
 
+
+---
+
+## 🚀 Future Work
+
+- Deep learning temporal models (LSTM / Transformers)
+- Reinforcement learning for insulin optimization
+- Real-time digital twin deployment
+- Integration with wearable devices
+
+---
+
+## 📌 Author
+
+**Zarrin Monirzadeh**  
+Data Engineer | Software Engineer | AI in Healthcare  
+
+---
+
+## ⭐ Final Note
+
+This project demonstrates a shift from **predictive AI → decision-aware AI**,  
+bridging machine learning with **causal reasoning and simulation** in healthcare.
 ---
 
 ## 📁 Repository Structure
