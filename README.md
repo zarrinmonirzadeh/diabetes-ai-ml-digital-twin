@@ -13,6 +13,11 @@ The work combines:
 - Counterfactual simulation
 - Decision-support analysis
 
+## Code Availability
+
+A simplified version of the implementation is provided for demonstration and reproducibility purposes.
+
+The full implementation, including extended experiments and production-level components, is not publicly released. Access may be provided upon reasonable request for research or collaboration.
 ---
 
 ## Repository Structure
