@@ -1,5 +1,9 @@
 # Diabetes AI/ML Digital Twin Framework
 
+![Python](https://img.shields.io/badge/Python-3.10+-blue)
+![ML](https://img.shields.io/badge/MachineLearning-Enabled-green)
+![Status](https://img.shields.io/badge/Status-Research--Prototype-orange)
+
 A simulation-driven digital twin framework for diabetes that integrates machine learning, temporal modeling, and causal inference to support decision-oriented care.
 
 ---
@@ -21,15 +25,20 @@ Unlike traditional predictive models, this framework enables:
 
 The framework combines:
 
-- **Machine Learning**
-  - Regression & predictive modeling
-- **Time-Series Analysis**
-  - CGM trajectory modeling
-- **Causal Inference**
-  - Counterfactual reasoning
-  - Difference-in-Differences (DiD)
-- **Simulation Engine**
-  - Intervention-based trajectory generation
+### 🔹 Machine Learning
+- Regression-based prediction
+- Feature-driven modeling
+
+### 🔹 Time-Series Modeling
+- CGM trajectory representation
+- Temporal dynamics capture
+
+### 🔹 Causal Inference
+- Counterfactual reasoning
+- Difference-in-Differences (DiD)
+
+### 🔹 Simulation Engine
+- Intervention-based trajectory generation
 
 ---
 
@@ -63,7 +72,7 @@ Trend extraction with uncertainty estimation.
 
 #### 📌 Fig 06 — 24-Hour CGM Trajectory
 ![Fig06](figures/Fig06.png)
-Baseline time-series used for simulation.
+Baseline time-series used for modeling and simulation.
 
 ---
 
@@ -71,13 +80,13 @@ Baseline time-series used for simulation.
 
 #### 📌 Fig 07 — Intervention Simulation
 ![Fig07](figures/Fig07.png)
-Simulated impact of:
+Simulated effects of:
 - Reduced carbohydrate intake
 - Physical activity (walking)
 
 #### 📌 Fig 08 — Real vs Counterfactual
 ![Fig08](figures/Fig08.png)
-Observed CGM vs simulated intervention outcomes.
+Observed CGM compared with simulated intervention outcomes.
 
 #### 📌 Fig 09 — Clinical Sensitivity Analysis
 ![Fig09](figures/Fig09.png)
@@ -89,11 +98,11 @@ Response of physiological variables to glucose perturbations.
 
 #### 📌 Fig 10 — Intervention vs Counterfactual
 ![Fig10](figures/Fig10.png)
-Core causal concept: observed vs counterfactual trajectories.
+Observed vs counterfactual trajectories after intervention.
 
 #### 📌 Fig 11 — Difference-in-Differences (DiD)
 ![Fig11](figures/Fig11.png)
-Estimation of treatment effects using causal inference.
+Estimation of intervention effect using causal inference.
 
 ---
 
@@ -101,7 +110,7 @@ Estimation of treatment effects using causal inference.
 
 #### 📌 Fig 12 — Activity Impact
 ![Fig12](figures/Fig12.png)
-Comparison of glucose response under:
+Glucose response under:
 - Sitting
 - Light activity
 - Moderate activity
@@ -112,11 +121,11 @@ Comparison of glucose response under:
 
 #### 📌 Fig 13 — Model Comparison
 ![Fig13](figures/Fig13.png)
-Classic vs improved modeling performance.
+Baseline vs enhanced modeling performance.
 
 #### 📌 Fig 14 — Linear vs Nonlinear Trends
 ![Fig14](figures/Fig14.png)
-Demonstrates limitations of linear assumptions.
+Illustrates limitations of linear assumptions in physiological systems.
 
 #### 📌 Fig 15 — Glucose Envelope Modeling
 ![Fig15](figures/Fig15.png)
@@ -144,7 +153,7 @@ Parameter estimation and model fitting example.
 
 #### 📌 Fig 19 — Multi-Series Trends
 ![Fig19](figures/Fig19.png)
-Comparison of multiple simulated trajectories.
+Comparison of multiple modeled trajectories.
 
 ---
 
@@ -152,10 +161,10 @@ Comparison of multiple simulated trajectories.
 
 This framework enables:
 
-- **Patient-specific digital twin modeling**
-- **Simulation of treatment scenarios**
-- **Causal inference for interventions**
-- **Explainable AI for healthcare decision support**
+- Patient-specific digital twin modeling
+- Simulation of treatment scenarios
+- Causal inference for intervention effects
+- Explainable AI for healthcare decision support
 
 ---
 
@@ -166,6 +175,9 @@ This framework enables:
 - Research in causal ML for healthcare
 - Simulation-based treatment planning
 
+---
+
+## 📁 Repository Structure
 
 ---
 
@@ -187,8 +199,5 @@ Data Engineer | Software Engineer | AI in Healthcare
 
 ## ⭐ Final Note
 
-This project demonstrates a shift from **predictive AI → decision-aware AI**,  
+This project demonstrates a transition from **predictive AI → decision-aware AI**,  
 bridging machine learning with **causal reasoning and simulation** in healthcare.
----
-
-## 📁 Repository Structure
