@@ -40,6 +40,17 @@ The framework combines:
 ### 🔹 Simulation Engine
 - Intervention-based trajectory generation
 
+## 📄 Paper
+
+A condensed version of the manuscript is provided for reference:
+
+📄 [View Preview](paper/preview.pdf)
+
+The complete paper, including extended experiments and full technical details, is available upon request for research or academic purposes.
+
+For access inquiries:
+
+📧 monirzadehzarrin@gmail.com
 ---
 
 ## 📊 Results & Visualizations
@@ -179,8 +190,6 @@ This framework enables:
 
 ## 📁 Repository Structure
 
----
-
 ## 🚀 Future Work
 
 - Deep learning temporal models (LSTM / Transformers)
@@ -199,4 +208,4 @@ Data Engineer | Software Engineer | AI in Healthcare
 
 ## ⭐ Final Note
 
-This work advances the paradigm from predictive AI to decision-aware AI, integrating machine learning with causal inference and simulation to enable intervention-driven analysis and personalized decision support in healthcare.
+This work advances the paradigm from predictive AI to **decision-aware AI**, integrating machine learning with causal inference and simulation to enable **intervention-driven analysis and personalized decision support** in healthcare systems.
