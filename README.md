@@ -199,5 +199,4 @@ Data Engineer | Software Engineer | AI in Healthcare
 
 ## ⭐ Final Note
 
-This project demonstrates a transition from **predictive AI → decision-aware AI**,  
-bridging machine learning with **causal reasoning and simulation** in healthcare.
+TThis work advances the paradigm from predictive AI to decision-aware AI, integrating machine learning with causal inference and simulation to enable intervention-driven analysis and personalized decision support in healthcare.
