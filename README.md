@@ -208,4 +208,7 @@ Data Engineer | Software Engineer | AI in Healthcare
 
 ## ⭐ Final Note
 
-This work advances the paradigm from predictive AI to **decision-aware AI**, integrating machine learning with causal inference and simulation to enable **intervention-driven analysis and personalized decision support** in healthcare systems.
+This work advances the paradigm from predictive AI to decision-aware AI, 
+transforming machine learning systems from passive forecasting tools into 
+active decision-support frameworks through the integration of causal inference 
+and counterfactual simulation in healthcare.
