@@ -2,13 +2,6 @@
 
 ### 📌 Author: **Zarrin Monirzadeh**  
 Data Engineer | Software Engineer | AI/ML in the Systems | Causal Modeling
----
-## 📚 Citation
-
-Monirzadeh, Z. (2026).  
-*Diabetes AI/ML Digital Twin Framework: AI-Driven Causal and Counterfactual Modeling for Decision-Aware Healthcare*.  
-GitHub Repository.  
-https://github.com/zarrinmonirzadeh/diabetes-ai-ml-digital-twin
 
 ![Python](https://img.shields.io/badge/Python-3.10+-blue)
 ![ML](https://img.shields.io/badge/MachineLearning-Enabled-green)
@@ -41,7 +34,7 @@ This framework goes further by enabling:
 - Decision-aware modeling rather than passive forecasting
 
 This shift is critical for building real-world clinical AI systems.
-----
+---
 
 ## ⚙️ Methodology
 
