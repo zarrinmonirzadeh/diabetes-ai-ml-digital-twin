@@ -1,0 +1,5 @@
+Model,Accuracy,AUC
+Random Forest,0.753,0.835
+Logistic Regression,0.742,0.826
+Gradient Boosting,0.697,0.782
+MLP,0.674,0.761
