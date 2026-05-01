@@ -1,7 +1,6 @@
 # Diabetes AI/ML Digital Twin Framework
----
-## 📌 Author
 
+## 📌 Author
 ## **Zarrin Monirzadeh**  
 Data Engineer | Software Engineer | **AI in Healthcare**  
 
