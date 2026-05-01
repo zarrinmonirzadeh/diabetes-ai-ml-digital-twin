@@ -8,7 +8,7 @@ Data Engineer | Software Engineer | **AI in Healthcare**
 ![AI](https://img.shields.io/badge/AI-Healthcare--Focused-purple)
 ![Status](https://img.shields.io/badge/Status-Research--Prototype-orange)
 
-A simulation-driven digital twin framework for diabetes that integrates machine learning, temporal modeling, and causal inference to support decision-oriented care.
+A Simulation-Driven Digital Twin Framework for Decision-Aware Diabetes Modeling Using Causal and Counterfactual Analysis.
 
 ---
 
