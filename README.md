@@ -56,7 +56,44 @@ Full version available upon request:
 📧 **monirzadehzarrin@gmail.com**
 
 ---
+## 🏗️ System Architecture
 
+The digital twin framework is designed as a modular pipeline:
+
+1. Data Ingestion
+   - XML → parsed CGM streams
+   - CSV → structured datasets
+
+2. Feature Engineering
+   - Temporal features (lags, rolling stats)
+   - Physiological constraints
+
+3. Modeling Layer
+   - Regression models (baseline)
+   - ML models (scikit-learn / MLP)
+
+4. Simulation Engine
+   - Counterfactual trajectory generation
+   - Intervention modeling (diet, activity)
+
+5. Evaluation Layer
+   - RMSE / MAE
+   - Clinical metrics (time-in-range)
+
+6. Visualization
+   - CGM plots
+   - Counterfactual comparisons
+  
+---
+## ⚡ Engineering Highlights
+
+- Built end-to-end ML pipeline from raw XML clinical data
+- Designed reproducible data processing for multi-patient CGM streams
+- Implemented counterfactual simulation engine for intervention analysis
+- Structured modular pipeline (train/test separation)
+- Generated interpretable outputs for clinical decision support
+
+---
 ## 🧪 Data Pipeline
 
 Raw CGM XML → CSV → AI Modeling → Simulation
@@ -129,7 +166,14 @@ python code/demo_pipeline.py
 - `test_pipeline.ipynb`
 
 ---
+## 🧩 Challenges
 
+- Noisy CGM data and missing values
+- Temporal dependency modeling
+- Aligning causal inference with time-series data
+- Translating ML outputs into clinically meaningful insights
+
+---
 ## 📊 Results & Visualizations
 
 (See repository figures folder for all figures Fig01–Fig19)
