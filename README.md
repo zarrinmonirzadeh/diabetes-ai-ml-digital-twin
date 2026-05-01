@@ -8,14 +8,14 @@ Data Engineer | Software Engineer | AI/ML in Healthcare Systems | Causal Modelin
 ![AI](https://img.shields.io/badge/AI-Healthcare--Focused-purple)
 ![Status](https://img.shields.io/badge/Status-Research--Prototype-orange)
 
-An AI/ML-driven digital twin framework for diabetes that integrates machine learning, temporal modeling, and causal inference to enable decision-aware healthcare systems.
-
+An AI/ML-driven digital twin framework for diabetes that integrates machine learning, temporal modeling, and causal inference to enable decision-aware healthcare systems and clinical intelligence.
 ---
 
 ## 🧠 Overview
 
-This repository presents a **reproducible digital twin architecture** for modeling glucose dynamics in diabetes patients using Continuous Glucose Monitoring (CGM) data.
-This framework is designed to move beyond prediction and enable actionable, simulation-based clinical decision support.
+This repository presents a reproducible digital twin architecture for modeling glucose dynamics in diabetes patients using Continuous Glucose Monitoring (CGM) data.
+
+The framework is designed to move beyond prediction and enable actionable, simulation-based clinical decision support.
 
 Unlike traditional predictive models, this framework enables:
 
@@ -378,6 +378,7 @@ This framework contributes to national priorities by:
 
 By combining machine learning with causal inference and simulation, this work supports the development of next-generation intelligent healthcare systems.
 
+This work supports the broader adoption of AI-driven, patient-specific modeling approaches in modern healthcare systems.
 ---
 ## 🧪 Use Cases
 
