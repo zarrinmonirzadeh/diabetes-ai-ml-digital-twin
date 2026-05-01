@@ -1,7 +1,7 @@
 # Diabetes AI/ML Digital Twin Framework
 
 ### 📌 Author: **Zarrin Monirzadeh**  
-Data Engineer | Software Engineer | AI/ML in the Systems | Causal Modeling
+Data Engineer | Software Engineer | AI/ML in Healthcare Systems | Causal Modeling
 
 ![Python](https://img.shields.io/badge/Python-3.10+-blue)
 ![ML](https://img.shields.io/badge/MachineLearning-Enabled-green)
@@ -15,6 +15,7 @@ An AI/ML-driven digital twin framework for diabetes that integrates machine lear
 ## 🧠 Overview
 
 This repository presents a **reproducible digital twin architecture** for modeling glucose dynamics in diabetes patients using Continuous Glucose Monitoring (CGM) data.
+This framework is designed to move beyond prediction and enable actionable, simulation-based clinical decision support.
 
 Unlike traditional predictive models, this framework enables:
 
@@ -103,6 +104,7 @@ The digital twin framework is designed as a modular pipeline:
 - Implemented counterfactual simulation engine for intervention analysis
 - Structured modular pipeline (train/test separation)
 - Generated interpretable outputs for clinical decision support
+- Designed scalable data processing for structured and semi-structured clinical data (XML/CSV)
 
 ---
 
@@ -401,7 +403,10 @@ figures/
 paper/
 ├── PreviewPaper.pdf
 ```
+---
+## 📚 Research Positioning
 
+This work sits at the intersection of machine learning, causal inference, and digital health systems, contributing toward the development of next-generation AI-driven clinical decision frameworks.
 ---
 
 ## ⭐ Final Note
