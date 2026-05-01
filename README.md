@@ -1,7 +1,6 @@
 # Diabetes AI/ML Digital Twin Framework
 
-## 📌 Author
-## **Zarrin Monirzadeh**  
+## 📌 Author **Zarrin Monirzadeh**  
 Data Engineer | Software Engineer | **AI in Healthcare**  
 
 ![Python](https://img.shields.io/badge/Python-3.10+-blue)
