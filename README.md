@@ -25,6 +25,8 @@ Unlike traditional predictive models, this framework enables:
 - Decision-support insights grounded in AI and causal inference
 
 This work bridges the gap between predictive machine learning and actionable clinical decision systems.
+
+This framework provides a foundation for scalable, data-driven clinical intelligence systems.
 ---
 ## 🎯 Why This Matters
 
@@ -416,4 +418,4 @@ This project shifts AI from:
 
 👉 Prediction → Decision-Aware Intelligence  
 
-enabling real-world clinical decision support through simulation and causal reasoning.
+enabling scalable, data-driven clinical decision support through simulation and causal reasoning.
