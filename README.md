@@ -23,6 +23,7 @@ Unlike traditional predictive models, this framework enables:
 - Temporal glucose modeling
 - Decision-support insights grounded in AI and causal inference
 
+This work bridges the gap between predictive machine learning and actionable clinical decision systems.
 ---
 ## 🎯 Why This Matters
 
@@ -103,6 +104,14 @@ The digital twin framework is designed as a modular pipeline:
 - Structured modular pipeline (train/test separation)
 - Generated interpretable outputs for clinical decision support
 
+---
+
+## 🧪 Reproducibility & Design
+
+- Fully reproducible pipeline from raw XML to model outputs
+- Modular architecture supporting extension and experimentation
+- Clear separation between training and evaluation workflows
+  
 ---
 ## 🧪 Data Pipeline
 
@@ -330,12 +339,16 @@ Comparison of multiple modeled trajectories.
 
 ## 📊 Key Insight
 
-This framework enables:
+This framework demonstrates a transition from traditional predictive modeling toward decision-aware AI systems.
 
-- Predictive modeling of glucose
-- Simulation of interventions (diet, activity)
-- Causal inference (treatment effects)
-- Digital twin representation of patient physiology
+It enables:
+
+- Patient-specific digital twin modeling
+- Simulation of intervention strategies (diet, activity)
+- Causal inference for treatment effect estimation
+- Data-driven clinical decision support
+
+This approach moves beyond forecasting toward actionable intelligence in healthcare systems.
 ---
 
 ## 💡 Key Contributions
