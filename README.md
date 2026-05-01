@@ -411,7 +411,13 @@ paper/
 
 This work sits at the intersection of machine learning, causal inference, and digital health systems, contributing toward the development of next-generation AI-driven clinical decision frameworks.
 ---
+## 📚 Citation
 
+Monirzadeh, Z. (2026).  
+*Diabetes AI/ML Digital Twin Framework: AI-Driven Causal and Counterfactual Modeling for Decision-Aware Healthcare*.  
+GitHub Repository.  
+https://github.com/zarrinmonirzadeh/diabetes-ai-ml-digital-twin
+---
 ## ⭐ Final Note
 
 This project shifts AI from:
