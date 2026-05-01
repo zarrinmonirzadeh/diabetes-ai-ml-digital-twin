@@ -1,299 +1,203 @@
-# Diabetes AI/ML Digital Twin Framework
+Diabetes AI/ML Digital Twin Framework
 
-**Zarrin Monirzadeh**  
-Data Engineer | Software Engineer | AI in Healthcare  
 
-![Python](https://img.shields.io/badge/Python-3.10+-blue)
-![ML](https://img.shields.io/badge/MachineLearning-Enabled-green)
-![Status](https://img.shields.io/badge/Status-Research--Prototype-orange)
 
 A simulation-driven digital twin framework for diabetes that integrates machine learning, temporal modeling, and causal inference to support decision-oriented care.
 
----
+🧠 Overview
 
-## 🧠 Overview
-
-This repository presents a **reproducible digital twin architecture** for modeling glucose dynamics in diabetes patients using Continuous Glucose Monitoring (CGM) data.
+This repository presents a reproducible digital twin architecture for modeling glucose dynamics in diabetes patients using Continuous Glucose Monitoring (CGM) data.
 
 Unlike traditional predictive models, this framework enables:
 
-- Simulation of interventions (diet, activity)
-- Counterfactual outcome estimation
-- Temporal glucose modeling
-- Decision-support insights
+Simulation of interventions (diet, activity)
 
----
+Counterfactual outcome estimation
 
-## ⚙️ Methodology
+Temporal glucose modeling
+
+Decision-support insights
+
+⚙️ Methodology
 
 The framework combines:
 
-### 🔹 Machine Learning
-- Regression-based prediction
-- Feature-driven modeling
+🔹 Machine Learning
 
-### 🔹 Time-Series Modeling
-- CGM trajectory representation
-- Temporal dynamics capture
+Regression-based prediction
 
-### 🔹 Causal Inference
-- Counterfactual reasoning
-- Difference-in-Differences (DiD)
+Feature-driven modeling
 
-### 🔹 Simulation Engine
-- Intervention-based trajectory generation
+🔹 Time-Series Modeling
 
----
+CGM trajectory representation
 
-## 📄 Paper
+Temporal dynamics capture
 
-A condensed preview of the manuscript is included:
+🔹 Causal Inference
 
-📄 [View Preview](paper/PreviewPaper.pdf)
+Counterfactual reasoning
 
-The full version, including extended experiments, full dataset analysis, and technical derivations, is available upon request for academic or research purposes.
+Difference-in-Differences (DiD)
 
-📧 **Request access:** monirzadehzarrin@gmail.com
+🔹 Simulation Engine
 
----
+Intervention-based trajectory generation
 
-## 🧪 Data Pipeline
+📄 Paper
 
-This repository includes a reproducible pipeline from **raw CGM XML → structured CSV → modeling → simulation outputs**.
+A condensed version of the manuscript is provided for reference:
 
-### Step 1 — Raw Data (XML)
+📄 View Preview
 
-```
+The complete paper, including extended experiments and full technical details, is available upon request for research or academic purposes.
 
-code/sample_raw_xml/
+For access inquiries:
 
-```
+📧 monirzadehzarrin@gmail.com
 
-### Step 2 — Structured CSV
+📊 Results & Visualizations
 
-```
+🔹 CGM Data & Clinical Representation
 
-code/sample_raw_csv/
+📌 Fig 01 — Daily CGM Profile (Real Patient)
 
-````
+Real glucose fluctuations over 24 hours, including hyperglycemia and hypoglycemia.
 
-### Step 3 — Modeling
+📌 Fig 02 — Ambulatory Glucose Profile (AGP)
 
-- Regression (glucose prediction)
-- Classification (glucose states)
-- Temporal modeling
+Glucose distribution, variability, and time-in-range metrics.
 
-### Step 4 — Counterfactual Simulation
+📌 Fig 03 — Same HbA1c, Different Dynamics
 
-- Reduced carbohydrate intake
-- Physical activity (walking)
-- Scenario-based trajectory generation
+Identical HbA1c can mask very different glucose variability patterns.
 
-### Step 5 — Outputs
+📌 Fig 04 — Glucose Threshold Monitoring
 
-- regression_results.csv  
-- classification_results.csv  
-- counterfactual_trajectories.csv  
-- counterfactual_summary.csv  
+Safe range (70–180 mg/dL) and excursions beyond clinical limits.
 
----
+🔹 Signal Processing & Temporal Modeling
 
-## ▶️ How to Run
+📌 Fig 05 — Smoothed CGM Signal
 
-### Run notebooks:
+Trend extraction with uncertainty estimation.
 
-- code/train_pipeline.ipynb  
-- code/test_pipeline.ipynb  
+📌 Fig 06 — 24-Hour CGM Trajectory
 
-### Or run script:
+Baseline time-series used for modeling and simulation.
 
-```bash
-python code/demo_pipeline.py
-````
+🔹 Counterfactual Simulation
 
-### Install dependencies:
+📌 Fig 07 — Intervention Simulation
 
-```bash
-pip install pandas numpy matplotlib scikit-learn
-```
+Simulated effects of:
 
----
+Reduced carbohydrate intake
 
-## 📊 Results & Visualizations
+Physical activity (walking)
 
-### 🔹 CGM Data & Clinical Representation
+📌 Fig 08 — Real vs Counterfactual
 
-#### Fig 01 — Daily CGM Profile
+Observed CGM compared with simulated intervention outcomes.
 
-![Fig01](figures/Fig01.png)
+📌 Fig 09 — Clinical Sensitivity Analysis
 
-#### Fig 02 — Ambulatory Glucose Profile
+Response of physiological variables to glucose perturbations.
 
-![Fig02](figures/Fig02.png)
+🔹 Causal Inference Framework
 
-#### Fig 03 — Same HbA1c, Different Dynamics
+📌 Fig 10 — Intervention vs Counterfactual
 
-![Fig03](figures/Fig03.png)
+Observed vs counterfactual trajectories after intervention.
 
-#### Fig 04 — Glucose Threshold Monitoring
+📌 Fig 11 — Difference-in-Differences (DiD)
 
-![Fig04](figures/Fig04.png)
+Estimation of intervention effect using causal inference.
 
----
+🔹 Behavioral & Physiological Effects
 
-### 🔹 Signal Processing & Temporal Modeling
+📌 Fig 12 — Activity Impact
 
-#### Fig 05 — Smoothed CGM Signal
+Glucose response under:
 
-![Fig05](figures/Fig05.png)
+Sitting
 
-#### Fig 06 — 24-Hour CGM Trajectory
+Light activity
 
-![Fig06](figures/Fig06.png)
+Moderate activity
 
----
+🔹 Model Evaluation & Behavior
 
-### 🔹 Counterfactual Simulation
+📌 Fig 13 — Model Comparison
 
-#### Fig 07 — Intervention Simulation
+Baseline vs enhanced modeling performance.
 
-![Fig07](figures/Fig07.png)
+📌 Fig 14 — Linear vs Nonlinear Trends
 
-#### Fig 08 — Real vs Counterfactual
+Illustrates limitations of linear assumptions in physiological systems.
 
-![Fig08](figures/Fig08.png)
+📌 Fig 15 — Glucose Envelope Modeling
 
-#### Fig 09 — Clinical Sensitivity Analysis
+Captures uncertainty and physiological bounds.
 
-![Fig09](figures/Fig09.png)
+🔹 Longitudinal & Stability Analysis
 
----
+📌 Fig 16 — Glucose Stability Zones
 
-### 🔹 Causal Inference Framework
+Defines hypo-, normo-, and hyperglycemic regions.
 
-#### Fig 10 — Intervention vs Counterfactual
+📌 Fig 17 — Longitudinal CGM (OhioT1DM)
 
-![Fig10](figures/Fig10.png)
+Multi-month glucose variability patterns.
 
-#### Fig 11 — Difference-in-Differences (DiD)
+🔹 Model Fitting & Trends
 
-![Fig11](figures/Fig11.png)
+📌 Fig 18 — Regression Fit
 
----
+Parameter estimation and model fitting example.
 
-### 🔹 Behavioral & Physiological Effects
+📌 Fig 19 — Multi-Series Trends
 
-#### Fig 12 — Activity Impact
+Comparison of multiple modeled trajectories.
 
-![Fig12](figures/Fig12.png)
+💡 Key Contributions
 
----
+This framework enables:
 
-### 🔹 Model Evaluation & Behavior
+Patient-specific digital twin modeling
 
-#### Fig 13 — Model Comparison
+Simulation of treatment scenarios
 
-![Fig13](figures/Fig13.png)
+Causal inference for intervention effects
 
-#### Fig 14 — Linear vs Nonlinear Trends
+Explainable AI for healthcare decision support
 
-![Fig14](figures/Fig14.png)
+🧪 Use Cases
 
-#### Fig 15 — Glucose Envelope Modeling
+Personalized diabetes management
 
-![Fig15](figures/Fig15.png)
+Clinical decision support systems
 
----
+Research in causal ML for healthcare
 
-### 🔹 Longitudinal & Stability Analysis
+Simulation-based treatment planning
 
-#### Fig 16 — Glucose Stability Zones
+📁 Repository Structure
 
-![Fig16](figures/Fig16.png)
+🚀 Future Work
 
-#### Fig 17 — Longitudinal CGM (OhioT1DM)
+Deep learning temporal models (LSTM / Transformers)
 
-![Fig17](figures/Fig17.png)
+Reinforcement learning for insulin optimization
 
----
+Real-time digital twin deployment
 
-### 🔹 Model Fitting & Trends
+Integration with wearable devices
 
-#### Fig 18 — Regression Fit
+📌 Author
 
-![Fig18](figures/Fig18.png)
+Zarrin MonirzadehData Engineer | Software Engineer | AI in Healthcare
 
-#### Fig 19 — Multi-Series Trends
+⭐ Final Note
 
-![Fig19](figures/Fig19.png)
-
----
-
-## 💡 Key Contributions
-
-* Patient-specific digital twin modeling
-* Simulation of treatment scenarios
-* Causal inference for intervention effects
-* Explainable AI for healthcare decision support
-* End-to-end pipeline from raw XML → simulation outputs
-
----
-
-## 🧪 Use Cases
-
-* Personalized diabetes management
-* Clinical decision support systems
-* Research in causal ML for healthcare
-* Simulation-based treatment planning
-
----
-
-## 📁 Repository Structure
-
-```
-code/
-├── train_pipeline.ipynb
-├── test_pipeline.ipynb
-├── demo_pipeline.py
-├── sample_raw_xml/
-├── sample_raw_csv/
-├── *.csv results
-
-figures/
-├── Fig01–Fig19
-
-paper/
-├── PreviewPaper.pdf
-├── PreviewPaper.tex
-```
-
----
-
-## 🚀 Future Work
-
-* Deep learning temporal models (LSTM / Transformers)
-* Reinforcement learning for insulin optimization
-* Real-time digital twin deployment
-* Integration with wearable devices
-
----
-
-## 📌 Author
-
-**Zarrin Monirzadeh**
-Data Engineer | Software Engineer | AI in Healthcare
-
-📧 [monirzadehzarrin@gmail.com](mailto:monirzadehzarrin@gmail.com)
-
----
-
-## ⭐ Final Note
-
-This work advances the paradigm from predictive AI to decision-aware AI, transforming machine learning systems from passive forecasting tools into active decision-support frameworks through the integration of causal inference and counterfactual simulation in healthcare.
-
-```
-
----
-
-If something still breaks after you paste (images, paths, etc.), tell me — I’ll fix it precisely.
-```
+This work advances the paradigm from predictive AI to decision-aware AI,transforming machine learning systems from passive forecasting tools intoactive decision-support frameworks through the integration of causal inferenceand counterfactual simulation in healthcare.
