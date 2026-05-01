@@ -1,54 +1,48 @@
-Diabetes AI/ML Digital Twin Framework
-
-
+# Diabetes AI/ML Digital Twin Framework
 
 A simulation-driven digital twin framework for diabetes that integrates machine learning, temporal modeling, and causal inference to support decision-oriented care.
 
-🧠 Overview
+---
+
+## 🧠 Overview
 
 This repository presents a reproducible digital twin architecture for modeling glucose dynamics in diabetes patients using Continuous Glucose Monitoring (CGM) data.
 
 Unlike traditional predictive models, this framework enables:
 
-Simulation of interventions (diet, activity)
+- Simulation of interventions (diet, activity)
+- Counterfactual outcome estimation
+- Temporal glucose modeling
+- Decision-support insights
 
-Counterfactual outcome estimation
+---
 
-Temporal glucose modeling
-
-Decision-support insights
-
-⚙️ Methodology
+## ⚙️ Methodology
 
 The framework combines:
 
-🔹 Machine Learning
+### 🔹 Machine Learning
+- Regression-based prediction
+- Feature-driven modeling
 
-Regression-based prediction
+### 🔹 Time-Series Modeling
+- CGM trajectory representation
+- Temporal dynamics capture
 
-Feature-driven modeling
+### 🔹 Causal Inference
+- Counterfactual reasoning
+- Difference-in-Differences (DiD)
 
-🔹 Time-Series Modeling
+### 🔹 Simulation Engine
+- Intervention-based trajectory generation
 
-CGM trajectory representation
+---
 
-Temporal dynamics capture
-
-🔹 Causal Inference
-
-Counterfactual reasoning
-
-Difference-in-Differences (DiD)
-
-🔹 Simulation Engine
-
-Intervention-based trajectory generation
-
-📄 Paper
+## 📄 Paper
 
 A condensed version of the manuscript is provided for reference:
 
-📄 View Preview
+📄 [View Preview](paper/PreviewPaper.pdf)
 
 The complete paper, including extended experiments and full technical details, is available upon request for research or academic purposes.
 
@@ -56,148 +50,151 @@ For access inquiries:
 
 📧 monirzadehzarrin@gmail.com
 
-📊 Results & Visualizations
+---
 
-🔹 CGM Data & Clinical Representation
+## 📊 Results & Visualizations
 
-📌 Fig 01 — Daily CGM Profile (Real Patient)
+### 🔹 CGM Data & Clinical Representation
 
+#### 📌 Fig 01 — Daily CGM Profile (Real Patient)
 Real glucose fluctuations over 24 hours, including hyperglycemia and hypoglycemia.
 
-📌 Fig 02 — Ambulatory Glucose Profile (AGP)
-
+#### 📌 Fig 02 — Ambulatory Glucose Profile (AGP)
 Glucose distribution, variability, and time-in-range metrics.
 
-📌 Fig 03 — Same HbA1c, Different Dynamics
-
+#### 📌 Fig 03 — Same HbA1c, Different Dynamics
 Identical HbA1c can mask very different glucose variability patterns.
 
-📌 Fig 04 — Glucose Threshold Monitoring
-
+#### 📌 Fig 04 — Glucose Threshold Monitoring
 Safe range (70–180 mg/dL) and excursions beyond clinical limits.
 
-🔹 Signal Processing & Temporal Modeling
+---
 
-📌 Fig 05 — Smoothed CGM Signal
+### 🔹 Signal Processing & Temporal Modeling
 
+#### 📌 Fig 05 — Smoothed CGM Signal
 Trend extraction with uncertainty estimation.
 
-📌 Fig 06 — 24-Hour CGM Trajectory
-
+#### 📌 Fig 06 — 24-Hour CGM Trajectory
 Baseline time-series used for modeling and simulation.
 
-🔹 Counterfactual Simulation
+---
 
-📌 Fig 07 — Intervention Simulation
+### 🔹 Counterfactual Simulation
 
+#### 📌 Fig 07 — Intervention Simulation
 Simulated effects of:
+- Reduced carbohydrate intake
+- Physical activity (walking)
 
-Reduced carbohydrate intake
-
-Physical activity (walking)
-
-📌 Fig 08 — Real vs Counterfactual
-
+#### 📌 Fig 08 — Real vs Counterfactual
 Observed CGM compared with simulated intervention outcomes.
 
-📌 Fig 09 — Clinical Sensitivity Analysis
-
+#### 📌 Fig 09 — Clinical Sensitivity Analysis
 Response of physiological variables to glucose perturbations.
 
-🔹 Causal Inference Framework
+---
 
-📌 Fig 10 — Intervention vs Counterfactual
+### 🔹 Causal Inference Framework
 
+#### 📌 Fig 10 — Intervention vs Counterfactual
 Observed vs counterfactual trajectories after intervention.
 
-📌 Fig 11 — Difference-in-Differences (DiD)
-
+#### 📌 Fig 11 — Difference-in-Differences (DiD)
 Estimation of intervention effect using causal inference.
 
-🔹 Behavioral & Physiological Effects
+---
 
-📌 Fig 12 — Activity Impact
+### 🔹 Behavioral & Physiological Effects
 
+#### 📌 Fig 12 — Activity Impact
 Glucose response under:
+- Sitting
+- Light activity
+- Moderate activity
 
-Sitting
+---
 
-Light activity
+### 🔹 Model Evaluation & Behavior
 
-Moderate activity
-
-🔹 Model Evaluation & Behavior
-
-📌 Fig 13 — Model Comparison
-
+#### 📌 Fig 13 — Model Comparison
 Baseline vs enhanced modeling performance.
 
-📌 Fig 14 — Linear vs Nonlinear Trends
-
+#### 📌 Fig 14 — Linear vs Nonlinear Trends
 Illustrates limitations of linear assumptions in physiological systems.
 
-📌 Fig 15 — Glucose Envelope Modeling
-
+#### 📌 Fig 15 — Glucose Envelope Modeling
 Captures uncertainty and physiological bounds.
 
-🔹 Longitudinal & Stability Analysis
+---
 
-📌 Fig 16 — Glucose Stability Zones
+### 🔹 Longitudinal & Stability Analysis
 
+#### 📌 Fig 16 — Glucose Stability Zones
 Defines hypo-, normo-, and hyperglycemic regions.
 
-📌 Fig 17 — Longitudinal CGM (OhioT1DM)
-
+#### 📌 Fig 17 — Longitudinal CGM (OhioT1DM)
 Multi-month glucose variability patterns.
 
-🔹 Model Fitting & Trends
+---
 
-📌 Fig 18 — Regression Fit
+### 🔹 Model Fitting & Trends
 
+#### 📌 Fig 18 — Regression Fit
 Parameter estimation and model fitting example.
 
-📌 Fig 19 — Multi-Series Trends
-
+#### 📌 Fig 19 — Multi-Series Trends
 Comparison of multiple modeled trajectories.
 
-💡 Key Contributions
+---
+
+## 💡 Key Contributions
 
 This framework enables:
 
-Patient-specific digital twin modeling
+- Patient-specific digital twin modeling
+- Simulation of treatment scenarios
+- Causal inference for intervention effects
+- Explainable AI for healthcare decision support
 
-Simulation of treatment scenarios
+---
 
-Causal inference for intervention effects
+## 🧪 Use Cases
 
-Explainable AI for healthcare decision support
+- Personalized diabetes management
+- Clinical decision support systems
+- Research in causal ML for healthcare
+- Simulation-based treatment planning
 
-🧪 Use Cases
+---
 
-Personalized diabetes management
+## 📁 Repository Structure
 
-Clinical decision support systems
+(To be completed based on project organization)
 
-Research in causal ML for healthcare
+---
 
-Simulation-based treatment planning
+## 🚀 Future Work
 
-📁 Repository Structure
+- Deep learning temporal models (LSTM / Transformers)
+- Reinforcement learning for insulin optimization
+- Real-time digital twin deployment
+- Integration with wearable devices
 
-🚀 Future Work
+---
 
-Deep learning temporal models (LSTM / Transformers)
+## 📌 Author
 
-Reinforcement learning for insulin optimization
+**Zarrin Monirzadeh**  
+Data Engineer | Software Engineer | AI in Healthcare  
 
-Real-time digital twin deployment
+📧 monirzadehzarrin@gmail.com
 
-Integration with wearable devices
+---
 
-📌 Author
+## ⭐ Final Note
 
-Zarrin MonirzadehData Engineer | Software Engineer | AI in Healthcare
-
-⭐ Final Note
-
-This work advances the paradigm from predictive AI to decision-aware AI,transforming machine learning systems from passive forecasting tools intoactive decision-support frameworks through the integration of causal inferenceand counterfactual simulation in healthcare.
+This work advances the paradigm from predictive AI to decision-aware AI,  
+transforming machine learning systems from passive forecasting tools into  
+active decision-support frameworks through the integration of causal inference  
+and counterfactual simulation in healthcare.
