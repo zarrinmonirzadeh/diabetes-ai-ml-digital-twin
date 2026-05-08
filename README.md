@@ -8,14 +8,15 @@ Data Engineer | Software Engineer | AI/ML in Healthcare Systems | Causal Modelin
 ![AI](https://img.shields.io/badge/AI-Healthcare--Focused-purple)
 ![Status](https://img.shields.io/badge/Status-Research--Prototype-orange)
 
-An AI/ML-driven digital twin framework for diabetes that integrates machine learning, temporal modeling, and causal inference to enable decision-aware healthcare systems and clinical intelligence.
+A proof-of-concept AI and machine learning framework for simulation-driven digital twins in diabetes, designed for temporal modeling, intervention analysis, and decision-aware healthcare modeling.
+
 ---
 
 ## 🧠 Overview
 
 This repository presents a reproducible digital twin architecture for modeling glucose dynamics in diabetes patients using Continuous Glucose Monitoring (CGM) data.
 
-The framework is designed to move beyond prediction and enable actionable, simulation-based clinical decision support.
+The framework is designed to move beyond prediction and enable simulation-based exploration of intervention scenarios.
 
 Unlike traditional predictive models, this framework enables:
 
@@ -24,9 +25,13 @@ Unlike traditional predictive models, this framework enables:
 - Temporal glucose modeling
 - Decision-support insights grounded in AI and causal inference
 
-This work bridges the gap between predictive machine learning and actionable clinical decision systems.
+This work bridges the gap between predictive machine learning and simulation-driven healthcare decision modeling.
 
-This framework provides a foundation for scalable, data-driven clinical intelligence systems.
+This framework provides a foundation for scalable, data-driven healthcare modeling and decision-support research.
+
+> ⚠️ Research Prototype Notice  
+> This repository presents a proof-of-concept research framework intended for simulation and methodological exploration only.  
+> It is not a clinically validated medical system and should not be used for diagnosis or treatment decisions.
 ---
 ## 🎯 Why This Matters
 
@@ -37,7 +42,8 @@ This framework goes further by enabling:
 - Causal reasoning about interventions
 - Decision-aware modeling rather than passive forecasting
 
-This shift is critical for building real-world clinical AI systems.
+This shift is important for future patient-specific healthcare AI systems.
+
 ---
 
 ## ⚙️ Methodology
@@ -137,7 +143,7 @@ Raw CGM XML → Structured CSV → Feature Engineering → AI Modeling → Count
 |------|-----|------|----|
 | Linear Regression | 43.2 | 54.1 | 0.45 |
 | Random Forest | 35.8 | 47.2 | 0.62 |
-| Gradient Boosting | 33.1 | 44.9 | 0.68 |
+| Gradient Boosting | 44.60 | 53.84 | 0.453 |
 | MLP | 30.5 | 41.7 | 0.72 |
 
 📂 Full file: [regression_results.csv](code/regression_results.csv)
